@@ -24,14 +24,14 @@
       <img src="profile.png" width="160px" />
       <ul>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#career">Career</a></li>
+        <li><a href="#about">About Me</a></li> <!-- Updated link text -->
+        <li><a href="#portfolio">Portfolio</a></li> <!-- Updated link text -->
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
       </ul>
       <br><br>
       <p> Ethical Hacker | DevOps Enthusiast | Multilingual Explorer<br></p>
     </aside>
-    <main class="content">
+    <main class="content">    
       <h2>About Me</h2>
       <p>I am an ethical hacker fascinated about technology and the
 impact it has on the world. I am constantly learning about
@@ -79,11 +79,17 @@ trends in the IT industry.</p>
         </tr>
         <tr>
       </table>
+      <h2>Contact Me</h2>
+      <p>Got questions or interested in collaborating? Feel free to drop me a message!</p>
+
       <form>
-        <label>Email: <input type="text" name="email"></label><br>
-        <label> Mobile: <input type="text" name="mobile"> </label><br>
-        <textarea name="comments" rows="4">Enter your message</textarea><br>
-        <input type="submit" value="Submit" /><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email address">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+        <input type="submit" value="Send Message">
       </form>
     </main>
     <footer class="footer">&copy; Copyright Hirwa Khalifa</footer>
