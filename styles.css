@@ -162,6 +162,31 @@ tr td i.fas {
   text-align: center;
 }
 
+.header .social a {
+  padding: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.header .social a:hover {
+  color: #84e4e2;
+}
+
+.header .social i.fab.fa-github,
+.header .social i.fab.fa-linkedin { /* Add this CSS block for GitHub and LinkedIn */
+  padding: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.header .social i.fab.fa-github:hover,
+.header .social i.fab.fa-linkedin:hover {
+  color: #84e4e2;
+}
+
+
 /* Add the styles for the updated form */
 .content h2 {
   font-size: 28px;
