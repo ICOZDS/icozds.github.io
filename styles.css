@@ -1,255 +1,208 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px; /* Adjust the gap between content sections as needed */
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+    }
 
-.container {
-  line-height: 150%;
-  padding: 20px;
-}
+    .header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin: 0;
+    }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #e9e9e9;
-}
+    .social {
+      display: flex;
+      gap: 10px;
+    }
 
-.header h1 {
-  color: #222;
-  font-size: 30px;
-  font-family: 'Pacifico', cursive;
-  margin: 0;
-}
+    .social a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
 
+    .social a:hover {
+      color: #84e4e2;
+    }
 
-.header .social a {
-  padding: 0 10px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+      padding: 1em;
+      background-color: #2e3550;
+      color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-right: 20px;
+    }
 
-.header .social a:hover {
-  color: #84e4e2;
-}
+    .left img {
+      width: 160px;
+      border-radius: 50%;
+    }
 
-.left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 220px;
-  padding: 1em;
-  background-color: #2e3550; /* Darker background color */
-  color: #fff; /* White text color */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  height: 100vh;
-  overflow-y: auto;
-}
+    .left ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
 
-.left img {
-  display: block;
-  margin: 0 auto 10px; /* Center the image */
-  max-width: 100%;
-  border-radius: 50%;
-}
+    .left li {
+      margin-bottom: 8px;
+    }
 
-.left ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+    .left li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      padding: 5px 0;
+      border-radius: 3px;
+    }
 
-.left li {
-  margin-bottom: 8px;
-}
+    .left li a.active,
+    .left li a:hover {
+      background-color: #84e4e2;
+      color: #2e3550;
+    }
 
-.left li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  padding: 8px 0;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.left li a.active,
-.left li a:hover {
-  background-color: #84e4e2;
-  color: #2e3550;
-  border-radius: 5px;
-}
+    .left p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #84e4e2;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-.left p {
-  font-size: 16px;
-  font-weight: bold;
-  color: #84e4e2;
-  text-align: center;
-  margin: 20px 0;
-}
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 800px;
+    }
 
+    h2 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #2e3550;
+    }
 
-.content {
-  margin-left: 240px;
-  padding: 1em;
-}
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
 
-h1 {
-  font-size: 24px;
-  color: #2e3550;
-  margin: 0;
-}
+    a {
+      color: #84e4e2;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
+    a:hover {
+      color: #29292a;
+    }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
 
-a {
-  color: #84e4e2;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
+    th, td {
+      border: 1px solid #dddddd;
+      padding: 8px;
+      text-align: left;
+    }
 
-a:hover {
-  color: #29292a;
-}
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 30px 0;
-}
+    tr th:first-child,
+    tr td:first-child {
+      border-left: none;
+    }
 
-td, th {
-  border: 1px solid #dddddd;
-  padding: 8px;
-  text-align: left;
-}
+    tr th:last-child,
+    tr td:last-child {
+      border-right: none;
+    }
 
-tr:nth-child(1) {
-  background-color: #84e4e2;
-  color: white;
-}
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e3550;
+      color: #fff;
+    }
 
-tr td i.fas {
-  font-size: 35px;
-}
+    /* Add the styles for the updated form */
+    form {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.footer {
-  padding: 25px 0;
-  background-color: #2e3550;
-  color: white;
-  text-align: center;
-}
+    form label {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 10px;
+      color: #2e3550;
+    }
 
-.header .social a {
-  padding: 0 10px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
+    form input[type="text"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
 
-.header .social a:hover {
-  color: #84e4e2;
-}
+    form textarea {
+      height: 120px;
+    }
 
-.header .social i.fab.fa-github,
-.header .social i.fab.fa-linkedin { /* Add this CSS block for GitHub and LinkedIn */
-  padding: 0 10px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
+    form input[type="submit"] {
+      background-color: #84e4e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
 
-.header .social i.fab.fa-github:hover,
-.header .social i.fab.fa-linkedin:hover {
-  color: #84e4e2;
-}
-
-
-
-/* Add the styles for the updated form */
-
-.content h2 {
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #2e3550;
-}
-
-.content p {
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-form {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
-  color: #2e3550;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-form textarea {
-  height: 120px;
-}
-
-form input[type="submit"] {
-  background-color: #84e4e2;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-form input[type="submit"]:hover {
-  background-color: #2e3550;
-  color: #84e4e2;
-}
+    form input[type="submit"]:hover {
+      background-color: #2e3550;
+      color: #84e4e2;
+    }
