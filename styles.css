@@ -14,11 +14,9 @@ body {
   justify-content: flex-start;
 }
 
-
 .container {
   line-height: 150%;
-  padding: 20px; 
-  
+  padding: 20px;
 }
 
 .header {
@@ -35,6 +33,7 @@ body {
   font-family: 'Pacifico', cursive;
   margin: 0;
 }
+
 
 .header .social a {
   padding: 0 10px;
@@ -188,6 +187,7 @@ tr td i.fas {
 
 
 /* Add the styles for the updated form */
+
 .content h2 {
   font-size: 28px;
   text-align: center;
