@@ -7,6 +7,13 @@ body {
   color: #333;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Adjust the gap between content sections as needed */
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -184,6 +191,7 @@ tr td i.fas {
 .header .social i.fab.fa-linkedin:hover {
   color: #84e4e2;
 }
+
 
 
 /* Add the styles for the updated form */
