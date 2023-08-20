@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-    body {
+   body {
       margin: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
       color: #333;
     }
+
+
 
     .container {
       line-height: 150%;
@@ -145,6 +147,20 @@
 
     tr td i.fas {
       font-size: 35px;
+    }
+
+.content p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    form {
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .footer {
